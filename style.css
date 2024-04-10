@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Ensure the body takes full page height */
+}
+
+.main-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book-card {
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.book-content h3, .book-content p {
+    margin: 10px;
+}
+
+.add-book-form, .filter-section, .remove-book-form {
+    margin: 20px;
+    text-align: center;
+}
+
+.add-book-form input, .add-book-form button, #sort-rating, #remove-book-btn {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#sort-rating, #remove-book-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sort-rating:hover, #remove-book-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Centering the remove-book-form */
+.remove-book-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack the dropdown and button vertically */
+}
+
+/* If you want to center the form in the middle of the page vertically */
+/* Adjust this class or container as needed based on your layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use 100% if you prefer it to take the full parent height */
+}
